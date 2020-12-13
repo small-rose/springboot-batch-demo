@@ -1,0 +1,22 @@
+server:
+  port: 8806
+#-------------------
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot_batch?serverTimezone=GMT%2b8&useSSL=true&Unicode=true&characterEncoding=utf8&autoReconnectForPools=true&allowMultiQueries=true&rewriteBatchedStatements=true
+    username: root
+    password: 123456
+
+# 默认是启动时执行一次，设置为false，表示启动不执行，可以通过 web等其他请求调用方式执行
+  batch:
+    job:
+      enabled: false  #是否自动执行定义的Job，默认是
+      names:  # 启动是要执行的job
+    initialize-schema: never # 是否初始化Spring Batch的数据库，ALWAYS,EMBEDDED,NEVER
+    schema:    # 默认有对应的sql脚本
+    table-prefix: batch_  # 设置Spring Batch的数据库表的前缀,默认batch开头
+
+#-------------------
+scheduled:
+  enabled: false
