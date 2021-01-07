@@ -2,7 +2,7 @@
 
 集成spring batch 框架使用的各种DEMO
 
-对应的[spring batch 博客文章](https://zhangxiaocai.cn/posts/7e9b1e27.html)
+对应的[spring batch 博客文章](https://notes.zhangxiaocai.cn/posts/7e9b1e27.html)
 
 ### 工程代码保函示例：
 
